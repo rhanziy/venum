@@ -6,7 +6,7 @@
 
 /*===== FullScreen Background =====*/
 html, body { width:100%; height:100%; }
-
+body { background:#111; }
 .wrap {  position:fixed; left:0; top:0; width:100%; height:100vh; }
 .wrap .mainvd { width:100%; height:100%; object-fit: cover; }
 

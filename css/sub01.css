@@ -10,7 +10,7 @@ header {
 }
 
 h1 { position:fixed; left:30px;}
-h1 a { width:180px;}
+h1 a { width:160px;}
 h1 a  img { width:100%; }
 
 .gnb { 
@@ -26,7 +26,7 @@ h1 a  img { width:100%; }
     margin:0 10px;
     line-height: 50px; 
 }
-.gnb > li a {   font-family: 'Play', sans-serif;  font-size:16px; transition:all 0.2s ease-in; }
+.gnb > li a {   font-family: 'Play', sans-serif;  font-size:15px; transition:all 0.2s ease-in; }
 .submenu { 
     display:none;
     position:absolute; top:53px; 
