@@ -14,5 +14,7 @@ img { outline:0; border:0; }
 
 body {
     font-family: 'Noto Sans KR', sans-serif; font-size:15px;
-    color:#333; overflow:hidden;
+    color:#333; 
 }
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Play', sans-serif;}

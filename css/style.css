@@ -6,15 +6,15 @@
 
 /*===== FullScreen Background =====*/
 html, body { width:100%; height:100%; }
-body { background:#111; }
+body { background:#111; overflow:hidden;  }
 .wrap {  position:fixed; left:0; top:0; width:100%; height:100vh; }
 .wrap .mainvd { width:100%; height:100%; object-fit: cover; }
 
 /*===== header =====*/
 header {
-    position:fixed; left:-500px; top:0;
+    position:fixed; left:-510px; top:0;
     width:700px; height:100%;
-    background:linear-gradient(-45deg, #ca55fc, #bf00ff, #8f1fde);
+    background:linear-gradient(-45deg, #c14ff1, #ae0ae5, #8f1fde);
     transform:skewX(-40deg);
 }
 h1 { position:fixed; left:250px; top:50px; }
