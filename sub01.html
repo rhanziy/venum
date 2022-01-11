@@ -12,8 +12,12 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 <link rel="stylesheet" href="./css/reset.css">
 <link rel="stylesheet" href="./css/sub01.css">
+<link  rel="stylesheet"   href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="./js/vanilla-tilt.min.js"></script>
+<script src="js/sub01script.js"></script>
 </head>
 
 <body>
@@ -52,82 +56,85 @@
             </ul>
          </nav>
     </header>
-    <section>
-      <div class="container gloves">
-          <div class="card">
-              <div class="imgBox">
-                  <img src="./imgs/redshoe.png">
-                  <h2>GIANT LOW</h2>
-              </div>
-              <div class="content">
-                 <div class="size">
-                    <h3>Size </h3>
-                      <span>7</span>
-                      <span>8</span>
-                      <span>9</span>
-                      <span>10</span>
-                </div>
-                <div class="color">
-                   <h3>Color   </h3>
-                     <span></span>
-                     <span></span>
-                     <span></span>
+   <section>
+      <div class="swiper mySwiper">
+         <div class="swiper-wrapper gloves">
+            <div class="swiper-slide">
+               <div class="imgBox">
+                     <img src="./imgs/glove1.png">
+                     <h2>Depender</h2>
                </div>
-               <a href="#">US 149.99</a>
-              </div> <!-- content -->
-          </div><!-- card -->
-          <div class="card">
-             <div class="imgBox">
-                 <img src="./imgs/whiteshoe.png">
-                 <h2>GIANT LOW</h2>
-             </div>
-             <div class="content">
-                <div class="size">
-                   <h3>Size </h3>
-                     <span>7</span>
-                     <span>8</span>
-                     <span>9</span>
-                     <span class="disabled">10</span>
-               </div>
-               <div class="color">
-                  <h3>Color   </h3>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-              </div>
-              <a href="#">US 149.99</a>
-             </div> <!-- content -->
-         </div><!-- card -->
-         <div class="card">
-          <div class="imgBox">
-              <img src="./imgs/greenshoe.png">
-              <h2>GIANT LOW</h2>
-          </div>
-          <div class="content">
-             <div class="size">
-                <h3>Size </h3>
-                  <span>7</span>
-                  <span class="disabled">8</span>
-                  <span>9</span>
-                  <span>10</span>
+               <div class="content">
+                  <div class="size">
+                     <h3>Size </h3>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                  </div>
+                  <div class="color">
+                     <h3>Color   </h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                  </div>
+                  <a href="#">US 44.99</a>
+               </div> 
             </div>
-            <div class="color">
-               <h3>Color   </h3>
-                 <span></span>
-                 <span></span>
-                 <span></span>
-           </div>
-           <a href="#">US 149.99</a>
-          </div> <!-- content -->
-      </div><!-- card -->
-      </div><!-- container -->
-  </section>
-    <section>
-        <div class="container shoes">
-            <div class="card">
+            <div class="swiper-slide">
+               <div class="imgBox">
+                  <img src="./imgs/glove2.png">
+                  <h2>Elite evo</h2>
+               </div>
+               <div class="content">
+                  <div class="size">
+                     <h3>Size </h3>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span class="disabled">10</span>
+                  </div>
+                  <div class="color">
+                     <h3>Color   </h3>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+               </div>
+               <a href="#">US 99.99</a>
+               </div> 
+            </div>
+            <div class="swiper-slide">
+               <div class="imgBox">
+                  <img src="./imgs/glove3.png">
+                  <h2>Petrosyan2.0</h2>
+               </div>
+               <div class="content">
+                  <div class="size">
+                     <h3>Size </h3>
+                        <span>7</span>
+                        <span class="disabled">8</span>
+                        <span>9</span>
+                        <span>10</span>
+                  </div>
+                  <div class="color">
+                     <h3>Color   </h3>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </div>
+                  <a href="#">US 84.99</a>
+               </div> 
+            </div>
+        </div><!-- swiper-wrapper -->
+      </div>
+   </section>
+   <section>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper shoes">
+            <div class="swiper-slide">
                 <div class="imgBox">
                     <img src="./imgs/redshoe.png">
-                    <h2>GIANT LOW</h2>
+                    <h2>Giant Low</h2>
                 </div>
                 <div class="content">
                    <div class="size">
@@ -144,12 +151,12 @@
                        <span></span>
                  </div>
                  <a href="#">US 149.99</a>
-                </div> <!-- content -->
-            </div><!-- card -->
-            <div class="card">
+                </div> 
+            </div>
+            <div class="swiper-slide">
                <div class="imgBox">
                    <img src="./imgs/whiteshoe.png">
-                   <h2>GIANT LOW</h2>
+                   <h2>Giant Low</h2>
                </div>
                <div class="content">
                   <div class="size">
@@ -166,31 +173,32 @@
                       <span></span>
                 </div>
                 <a href="#">US 149.99</a>
+               </div> 
+           </div>
+           <div class="swiper-slide">
+               <div class="imgBox">
+                  <img src="./imgs/greenshoe.png">
+                  <h2>Giant Low</h2>
+               </div>
+               <div class="content">
+                  <div class="size">
+                     <h3>Size </h3>
+                     <span>7</span>
+                     <span class="disabled">8</span>
+                     <span>9</span>
+                     <span>10</span>
+               </div>
+               <div class="color">
+                  <h3>Color   </h3>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+               </div>
+               <a href="#">US 149.99</a>
                </div> <!-- content -->
-           </div><!-- card -->
-           <div class="card">
-            <div class="imgBox">
-                <img src="./imgs/greenshoe.png">
-                <h2>GIANT LOW</h2>
-            </div>
-            <div class="content">
-               <div class="size">
-                  <h3>Size </h3>
-                    <span>7</span>
-                    <span class="disabled">8</span>
-                    <span>9</span>
-                    <span>10</span>
-              </div>
-              <div class="color">
-                 <h3>Color   </h3>
-                   <span></span>
-                   <span></span>
-                   <span></span>
-             </div>
-             <a href="#">US 149.99</a>
-            </div> <!-- content -->
-        </div><!-- card -->
-        </div><!-- container -->
-    </section>
+            </div><!-- swiper-slide -->
+         </div><!-- swiper-wrapper -->
+      </div>
+   </section>
 </body>
 </html>

@@ -52,14 +52,14 @@ h1 a  img { width:100%; }
 .gnb > li:hover .submenu{ display:block;}
 .submenu li:hover > a { color:#e3e3e3; }
 
-section {
+/* .swiper {
     display:flex; justify-content: center; align-items: center;
     min-height:100%;
     padding:200px 30px;
     background: #222;
     overflow:hidden;
 }
-section::before{
+.swiper::before{
     content:'';
     position:fixed;  left:0; top:0;
     width:100%; height:100%;
@@ -67,51 +67,70 @@ section::before{
     clip-path: circle(65% at 100% -20%);
 
 }
-section::after{
+.swiper::after{
     content:'';
     position:fixed;  left:0; top:0;
     width:100%; height:100%;
     background:#47aafa;
     clip-path: circle(35% at 10% 100%);
 
+} */
+section {
+    position:relative; 
+    min-height:100%;
+    padding:200px 30px;
 }
-/*===== section product=====*/
-.container {
-    display:flex;  justify-content: center; align-items: center; flex-wrap: wrap; 
-    position:relative;
-    z-index:10;
+section::before{
+    content:'';
+    position:fixed;  left:0; top:0;
+    width:100%; height:100%;
+    background:#7f24ca;
+    clip-path: circle(60% at 100% -20%);
+}
+section::after{
+    content:'';
+    position:fixed;  left:0; top:0;
+    width:100%; height:100%;
+    background:#0ae5a3;
+    clip-path: circle(35% at 0% 100%);
 }
 
-.container .card {
+/*===== .swiper product=====*/
+.swiper { width:100%;}
+.swiper-wrapper .swiper-slide {
     display:flex;  justify-content: center; align-items: center;  flex-direction: column;
     position:relative;
     width:300px; height:400px;
-    margin:20px 40px;
+    margin:20px 20px;
     background:rgba(255, 255, 255, 0.05);
+    transform-style: preserve-3d;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(15px);
 }
-.container .card .imgBox{ 
+.swiper-wrapper .swiper-slide .imgBox{ 
     display:flex;  justify-content: center; align-items: center; 
     flex-direction: column;
     position:relative;
     padding:20px;
+    transform-style: preserve-3d;
     transition:0.5s ease-in-out;
     }
-.container .card .imgBox img { 
+.swiper-wrapper .swiper-slide .imgBox img { 
     max-width:100%;
     margin:0 0 20px;
+    transform-style: preserve-3d;
     transition:0.5s ease-in-out;
 }
-.container .card .imgBox h2 {
+.swiper-wrapper .swiper-slide .imgBox h2 {
     color:transparent; font-weight:700;
-    background:linear-gradient(to right top,#b9b9b9, #fff, #9a9a9a);
+    /* background:linear-gradient(to right top,#b9b9b9, #fff, #9a9a9a);
     -webkit-background-clip: text;
-    background-clip: text;
+    background-clip: text; */
+    color:rgba(255, 255, 255, 0.5);
     transition:0.5s ease-in-out;
 }
 
-.container .card .content {
+.swiper-wrapper .swiper-slide .content {
     display:flex;  justify-content: center; align-items: center; 
     flex-direction: column;
     position:absolute;
@@ -120,55 +139,55 @@ section::after{
     overflow:hidden;
     opacity:0; visibility: hidden;
 }
-.container .card:hover .imgBox{
-    transform:translateY(-100px) scale(0.9);   
+.swiper-wrapper .swiper-slide:hover .imgBox{
+    transform:translateY(-85px) scale(0.9);   
 }
-.container .card:hover .imgBox img {
-    transform:translateY( -40px) rotate(20deg);
+.swiper-wrapper .swiper-slide:hover .imgBox img {
+    transform: rotate(20deg) scale(0.75);
 }
-.container .card:hover .imgBox h2 {
-    transform:translateY(-25px);
+.swiper-wrapper .swiper-slide:hover .imgBox h2 {
+    transform:translateY(-25px); color:#fff;
 }
-.container .card:hover .content {
+.swiper-wrapper .swiper-slide:hover .content {
     opacity:1;
     visibility: visible;
     transform:translateY(-20px);
 }
-.container .card .content .size, .container .card .content .color {
+.swiper-wrapper .swiper-slide .content .size, .swiper-wrapper .swiper-slide .content .color {
     display:flex;  justify-content: center; align-items: center; 
     padding:8px 20px;
 }
-.container .card .content .size h3, .container .card .content .color h3 {
+.swiper-wrapper .swiper-slide .content .size h3, .swiper-wrapper .swiper-slide .content .color h3 {
     margin:3px 10px 0 0;
     color:#fff;  font-size:14px; font-weight:400;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-.container .card .content .size span {
+.swiper-wrapper .swiper-slide .content .size span {
     display:inline-block;
     position:relative;
-    width:23px; height:23px;
+    width:22px; height:22px;
     margin:0 5px;
-    color:#222; font-size:14px;
+    color:#222; font-size:13px;
     font-weight: 600;
-    text-align: center;  line-height:22px;
+    text-align: center;  line-height:24px;
     background:#fff;
     border-radius: 4px;
     transition:0.5s;
     overflow:hidden;
     cursor:pointer;
 }
-.container .card:nth-child(2) .content .size span:last-child::after, .container .card:nth-child(3) .content .size span:nth-child(3)::after { 
+.swiper-wrapper .swiper-slide:nth-child(2) .content .size span:last-child::after, .swiper-wrapper .swiper-slide:nth-child(3) .content .size span:nth-child(3)::after { 
     content:'';
     position:absolute; top:-5px; left:8px;
     width:1px; height:40px;
     background:rgb(255, 0, 0);
     transform:rotate(45deg);
  }
-.container .card .content .size span:hover:not(.disabled) {  background:#8f1fde; }
+.swiper-wrapper .swiper-slide .content .size span:hover:not(.disabled) {  background:#8f1fde; }
 
 
-.container .card .content .color span {
+.swiper-wrapper .swiper-slide .content .color span {
     width:20px; height:20px;
     margin:0 5px;
     background:#f00;
@@ -176,10 +195,10 @@ section::after{
     border:2px solid #fff;
     cursor:pointer;
 }
-.container .card .content .color span:nth-child(2) { background:#58de1f }
-.container .card .content .color span:nth-child(3) { background:#dddddd }
+.swiper-wrapper .swiper-slide .content .color span:nth-child(2) { background:#58de1f }
+.swiper-wrapper .swiper-slide .content .color span:nth-child(3) { background:#dddddd }
 
-.container .card .content a {
+.swiper-wrapper .swiper-slide .content a {
     display:inline-block;
     position:relative;
     top:10px;
@@ -189,7 +208,7 @@ section::after{
     background:#fff;
     border-radius: 40px;
 }
-.container .card .content a::after {
+.swiper-wrapper .swiper-slide .content a::after {
     content:'BUY NOW';
     position:absolute; left:0; top:0;
     width:100%; height:100%;
@@ -199,12 +218,12 @@ section::after{
     opacity:0;
     transition: 0.2s ease-in;
 }
-.container .card:nth-child(2) .content a::after {
+.swiper-wrapper .swiper-slide:nth-child(2) .content a::after {
     background:rgb(199, 0, 217);
 }
-.container .card:nth-child(3) .content a::after {
+.swiper-wrapper .swiper-slide:nth-child(3) .content a::after {
     background:rgb(83, 215, 0);
 }
-.container .card .content a:hover:after{
+.swiper-wrapper .swiper-slide .content a:hover:after{
     opacity:1;
 }
