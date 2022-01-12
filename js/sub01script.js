@@ -2,7 +2,7 @@ $(document).ready(function(){
   
     var swiper = new Swiper(".mySwiper", {
         effect: "coverflow",
-        grabCursor: true,
+        grabCursor: false,
         centeredSlides: true,
         slidesPerView: "auto",
         coverflowEffect: {
@@ -14,6 +14,7 @@ $(document).ready(function(){
         },
         pagination: {
         el: ".swiper-pagination",
+        clickable: true,
         }
     });
 
