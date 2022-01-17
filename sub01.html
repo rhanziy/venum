@@ -13,50 +13,51 @@
 <link rel="stylesheet" href="./css/sub01.css">
 <link  rel="stylesheet"  href="./css/swiper.css">
 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/sub01script.js"></script>
-<script src="./js/vanilla-tilt.min.js"></script>
-<script src="./js/swiper.js"></script>
+<script defer src="./js/swiper.js"></script>
 </head>
 
 <body>
     <header>
-        <h1><a href="index.html"><img src="https://asia.venum.com/static/version1625341792/frontend/Venum/newvenum/ko_KR/images/logo/logo_venum_euro_black.svg" alt="" width="189" height="64"></a></h1>
-        <nav>
-            <ul class="gnb">
-               <li>
-                  <a href="#"><em>About VENUM</em></a>
-                  <ul class="submenu">
-                     <li><a href="#"><em>English</em></a></li>
-                  </ul>
-               </li>
-               <li>
-                  <a href="sub01.html"><em>Our Products</em></a>
-                  <ul  class="submenu">
-                     <li><a href="#"><em>Gloves</em></a></li>
-                     <li><a href="#"><em>Handwraps</em></a></li>
-                     <li><a href="#"><em>Shoes</em></a></li>
-                  </ul>
-               </li>
-               <li>
-                  <a href="#"><em>Venum Camp</em></a>
-                  <ul  class="submenu">
-                     <li><a href="#"><em>Camp Info</em></a></li>
-                     <li><a href="#"><em>Reservation</em></a></li>
-                  </ul>
-               </li>
-               <li>
-                  <a href="#"><em>Community</em></a>
-               </li>
-            </ul>
-            <ul class="login">
-                <li><a href="#">login</a></li>
-                <li><a href="#">join</a></li>
-            </ul>
-         </nav>
-    </header>
+        <h1><a href="index.html"><img src="https://asia.venum.com/static/version1625341792/frontend/Venum/newvenum/ko_KR/images/logo/logo_venum_euro_white.svg" alt="" width="189" height="64"></a></h1>
+      <nav>
+         <ul class="gnb">
+            <li>
+               <a href="#"><em>About VENUM</em></a>
+               <ul class="submenu">
+                  <li><a href="#"><em>English</em></a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="sub01.html"><em>Our Products</em></a>
+               <ul  class="submenu">
+                  <li><a href="#"><em>Gloves</em></a></li>
+                  <li><a href="#"><em>Handwraps</em></a></li>
+                  <li><a href="#"><em>Shoes</em></a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="#"><em>Venum Camp</em></a>
+               <ul  class="submenu">
+                  <li><a href="#"><em>Camp Info</em></a></li>
+                  <li><a href="#"><em>Reservation</em></a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="#"><em>Community</em></a>
+            </li>
+         </ul>
+         <ul class="login">
+               <li><a href="#">login</a></li>
+               <li><a href="#">join</a></li>
+         </ul>
+      </nav>
+   </header>
    <section>
+      <div class="circleText">
+         <h2 class="text">⦁ Join the Venum Team ⦁ Join the Venum Team</h2>
+      </div>
       <div class="swiper-container">
          <div class="swiper-wrapper gloves">
             <div class="swiper-slide">
@@ -343,6 +344,7 @@
          <div class="swiper-button-prev"></div><!-- 이전 버튼 -->
          <!-- <div class="swiper-pagination"></div> -->
       </div><!-- swiper-container -->
+      <div class="circleText2"></div>
    </section>
    <footer>
       <div class="ft-wrap">
@@ -378,5 +380,16 @@
       </div>
       <p>Copyright &copy; 2021 VENUM.COM </p>
    </footer>
+<script>
+   const text = document.querySelector('.text');
+   text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+
+   const element = document.querySelectorAll('.text > span');
+   for ( let i = 0; i < element.length; i++ ){
+      element[i].style.transform = "rotate("+i*10.5+"deg)"
+   }
+
+   $('.text').clone().appendTo('.circleText2');
+</script>
 </body>
 </html>
