@@ -23,5 +23,32 @@ $(document).ready(function(){
 
     });
 
+    const text = document.querySelector('.text');
+    text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+ 
+    const element = document.querySelectorAll('.text > span');
+    for ( let i = 0; i < element.length; i++ ){
+       element[i].style.transform = "rotate("+i*14.3+"deg)"
+    }
+    
+    $(window).scroll(function(){
+        
+        scroll = $(window).pageYOffset ;
+
+        $('.scar.p').css({
+            left : -300+scroll*0.1+"px",
+            top: -300+scroll*0.03+"px"
+        });
+
+        let height = $(document).height();
+        let heightW = $(window).height();
+
+        if (Math.round ($(window).scrollTop() == height-heightW)) {
+            $('.scar.g').addClass('on');
+        } else {
+            $('.scar.g').removeClass('on');
+        }
+        
+    });
 
 });
