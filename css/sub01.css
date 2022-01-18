@@ -223,7 +223,7 @@ section:nth-child(4) { padding-bottom:200px; }
 .swiper-wrapper.wrap .swiper-slide.cw:hover .imgBox h2 { transform:translateY(-15px);}
 
 /* ===== circle text ani ==== */
-.circleText {  
+/* .circleText {  
     position:absolute; 
     right:300px; bottom:750px;
     transform-origin: 100px 500px;
@@ -243,7 +243,7 @@ section:nth-child(4) { padding-bottom:200px; }
 }
 @keyframes spin {
     from { transform: rotate(0deg); }
-}
+} */
 
 /*===== footer =====*/
 
