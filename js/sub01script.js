@@ -23,13 +23,13 @@ $(document).ready(function(){
 
     });
 
-    const text = document.querySelector('.text');
-    text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+    // const text = document.querySelector('.text');
+    // text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
  
-    const element = document.querySelectorAll('.text > span');
-    for ( let i = 0; i < element.length; i++ ){
-       element[i].style.transform = "rotate("+i*13.15+"deg)"
-    }
+    // const element = document.querySelectorAll('.text > span');
+    // for ( let i = 0; i < element.length; i++ ){
+    //    element[i].style.transform = "rotate("+i*13.15+"deg)"
+    // }
     
     $(window).scroll(function(){
 
