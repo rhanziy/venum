@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+/*===== sub01 =====*/
+
 /*===== header =====*/
 body { background:#222; }
 header {
@@ -12,7 +14,7 @@ header {
 }
 
 h1 { position:absolute; left:30px;}
-h1 a { width:160px;}
+h1 a { width:140px;}
 h1 a  img { width:100%; }
 
 .gnb { 
@@ -68,16 +70,21 @@ h1 a  img { width:100%; }
     transform: translateY(-50%);
 }
 .title h2 {
-    width:450px; margin-bottom: 10px;
+    width:500px; margin-bottom: 10px;
+    font-family: 'Zen Tokyo Zoo', cursive;
     font-size:50px; color:#fff;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); 
 }
+.title h2 span { 
+    position: absolute; top:15px; right:0;
+    font-size:100px; 
+}
 .title p {
-    width:300px; height:30px;
+    width:300px; height:40px;
     color:rgb(115, 255, 0); 
     font-family: 'Play', sans-serif;
     font-size:25px; 
-    text-align: center; line-height: 28px;
+    text-align: center; line-height: 38px;
     background:rgba(0, 0, 0,0.8);
 }
 /*===== section =====*/
@@ -89,18 +96,12 @@ article {
     transition: all 0.6s ease-in;
 }
 article h2 { 
-    position:absolute; left:30px; top:270px; padding-left: 10px;
+    position:absolute; left:30px; top:50%; padding-left: 10px;
     color:rgba(115, 255, 0, 0.8); font-size:24px; font-weight:bold;
     line-height:0.8; 
     border-left:2px solid rgba(136, 255, 67, 0.5); z-index: 3;
-    transition:all 0.3s ease-in 0.2s;
- }
-article div { 
-    position:absolute; right:0px; top:250px;
-    width:0; height:60px;
-    background:rgba(26, 48, 17, 0.8);
-    z-index: 2;
-    transition:all 0.4s ease-in;
+    transform:translateY(-50%);
+    transition:all 0.2s ease-in;
  }
 article img { 
     display: block;
@@ -112,8 +113,15 @@ article img {
     object-fit: cover;
  }
  article:first-child img { object-position:30%; }
- article:last-child img { object-position:60% center; }
 
+ article div {
+    position:absolute; right:-800px; bottom:65px;
+    width:700px; height:250px;
+    background: url(../imgs/camp-scar.png) no-repeat left;
+    background-size: cover;
+    transition: 0.7s ease-in 0.5s;
+    z-index: 2;
+}
 article h3 { 
     position:absolute; right:-400px; bottom:200px;
     width:400px;
@@ -127,10 +135,10 @@ article p {
     font-size:12px; color:#fff; text-align: right; opacity: 0.8; z-index: 5;
     transition:all 0.3s ease-in 0.2s;
  }
-
+ 
 article:hover { width:30%; }
 article:hover img { opacity:1; }
-article:hover h2 { color:#f4f4f4; border-left: 3px solid #d8d8d8; }
-article:hover div { width:100%;  }
+article:hover h2 { opacity: 0; }
+article:hover div { left:15px; }
 article:hover h3 { right:40px; } 
 article:hover p { right:40px; } 

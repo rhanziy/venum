@@ -14,7 +14,7 @@ body { background:#111; overflow:hidden;  }
 header {
     position:fixed; left:-510px; top:0;
     width:700px; height:100%;
-    background:linear-gradient(-45deg, #c14ff1, #ae0ae5, #8f1fde);
+    background:linear-gradient(-45deg, #ab57e2, #9d1cf3, #922cf1);
     transform:skewX(-40deg);
 }
 h1 { position:fixed; left:250px; top:50px; }
@@ -52,15 +52,15 @@ h1 img { width:250px; transform:skewX(40deg); }
     font-family: 'Play', sans-serif; 
     text-align: center;
     background:#222; 
-    border-bottom: 1px solid #d34eff;
+    border-bottom: 1px solid #b84eff;
 }
-.gnb ul li:hover a { color: #c225ee;}
+.gnb ul li:hover a { color: #b76bff;}
 
 /*===== sns Buttons =====*/
 .sns { position:absolute; right:50px; top:50px; }
 .sns li { float:left; margin-right:20px; }
 .sns .fab {
-   font-size:25px; color:#bf00ff; opacity:0.5;
+   font-size:25px; color:#9433d4; opacity:0.5;
    transform:scale(1); transition:all 0.5s ease-in;
 }
 .sns .fab:hover { opacity:1; transform:scale(1.1); }
@@ -76,12 +76,12 @@ h1 img { width:250px; transform:skewX(40deg); }
 .con {
     position:absolute; left:40px; bottom:0;
     width:400px; height:100%;
-    background:rgba(29, 2, 40, 0.8);
+    background:rgba(25, 2, 40, 0.8);
     transition:all 0.8s ease-in-out 0.2s;
 }
 
 .conBox:hover { right:-400px; background:rgba(0, 0, 0, 0.75); }
-.conBox:hover .con { left:60px; background:rgba(69, 7, 86, 0.6); }
+.conBox:hover .con { left:60px; background:rgba(61, 12, 94, 0.6); }
 
 /*===== contents =====*/
 article { 
@@ -94,7 +94,7 @@ article a  img { width:100%;  object-fit: cover; }
 article:nth-child(1) { bottom:360px; transition-delay:0.2s; }
 article:nth-child(2) { bottom:200px; transition-delay:0.3s;  }
 article:nth-child(3) { bottom:40px; transition-delay:0.4s;  }
-article h3 { margin-left:20px; font-size:16px; color:#a250bd; transform: skew(30deg);}
+article h3 { margin-left:20px; font-size:16px; color:#ca84f3; transform: skew(30deg);}
 article img { transition:all 0.2s ease-in;}
 
 article:hover img { opacity: 0.4;}
@@ -102,7 +102,7 @@ article:hover img { opacity: 0.4;}
 
 /*===== conAni =====*/
 .conAni { 
-    position:absolute;  left:100px; bottom:50px;  width:150px; height:50px; color:#db27ff; 
+    position:absolute;  left:100px; bottom:50px;  width:150px; height:50px; color:#b027ff; 
     font-size:30px; 
     transform:skew(40deg); transition:all 0.4s ease-in;
 }
