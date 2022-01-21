@@ -30,6 +30,13 @@ $(document).ready(function(){
     // for ( let i = 0; i < element.length; i++ ){
     //    element[i].style.transform = "rotate("+i*13.15+"deg)"
     // }
+
+    $('#btn-open').click(function(e){
+        e.preventDefault( );
+        $(this).toggleClass('x');
+        $('header').toggleClass('open');
+    });
+
     
     $(window).scroll(function(){
 

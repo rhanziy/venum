@@ -10,37 +10,50 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 <link rel="stylesheet" href="./css/reset.css">
 <link rel="stylesheet" href="./css/sub02.css">
+<link rel="stylesheet" href="./css/subcommon.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+            $('#btn-open').click(function(e){
+            e.preventDefault( );
+            $(this).toggleClass('x');
+            $('header').toggleClass('open');
+        });
+    });
+</script>
 </head>
 <body>
     <header>
         <h1><a href="index.html"><img src="https://asia.venum.com/static/version1625341792/frontend/Venum/newvenum/ko_KR/images/logo/logo_venum_euro_white.svg" alt="mainlogo" width="189" height="64"></a></h1>
-        <nav>
-            <ul class="gnb">
+        <button id="btn-open">
+            <span></span>
+         </button>
+      <nav>
+         <ul class="gnb">
             <li>
-                <a href="sub01.html"><em>Our Products</em></a>
-                <ul  class="submenu">
-                    <li><a href="sub01.html"><em>Gloves</em></a></li>
-                    <li><a href="#shoes"><em>Shoes</em></a></li>
-                    <li><a href="#wrap"><em>Handwraps</em></a></li>
-                </ul>
+               <a href="sub01.html"><em>Our Products</em></a>
+               <ul  class="submenu">
+                  <li><a href="sub01.html"><em>Gloves</em></a></li>
+                  <li><a href="sub01.html"><em>Shoes</em></a></li>
+                  <li><a href="sub01.html"><em>Handwraps</em></a></li>
+               </ul>
             </li>
             <li>
-                <a href="#"><em>Venum Camp</em></a>
-                <ul  class="submenu">
-                    <li><a href="sub02.html"><em>About Camp</em></a></li>
-                    <li><a href="#"><em>Reservation</em></a></li>
-                </ul>
+               <a href="#"><em>Venum Camp</em></a>
+               <ul  class="submenu">
+                  <li><a href="sub02.html"><em>About Camp</em></a></li>
+                  <li><a href="sub02.html"><em>Reservation</em></a></li>
+               </ul>
             </li>
             <li>
-                <a href="#"><em>Community</em></a>
+               <a href="#"><em>Community</em></a>
             </li>
-            </ul>
-            <ul class="login">
-                <li><a href="#">login</a></li>
-                <li><a href="#">join</a></li>
-            </ul>
-        </nav>
+         </ul>
+      </nav>
+      <ul class="login">
+         <li><a href="#">login</a></li>
+         <li><a href="#">join</a></li>
+      </ul>
     </header>
     <div class="wrap">
         <div class="title">
@@ -70,5 +83,6 @@
                 <p>Nulla ex risus, varius at mauris quis, fringilla accumsan urna. Cras eleifend tempor nunc id cursus.</p>
             </article>
         </section>
+    </div>
 </body>
 </html>
