@@ -58,7 +58,7 @@ h1 a  img { width:100%; }
     /*===== header hover =====*/
     header:hover { height:200px; }
     .gnb > li:hover > a { transform:scale(1.1);}
-    .submenu li:hover > a { color:#bc6aff; }
+    .submenu li:hover > a { color:#f0f0f0; }
     .login li:hover a { opacity: 0.5;}
 }
 

@@ -186,7 +186,7 @@ footer {
 .ft-content h4 { font-size:20px; margin-bottom:15px; }
 .ft-sns li { font-size:25px; margin:5px; }
 .ft-sns li:first-child { margin-top:0; }
-.ft-sns li a { color:#7f24ca;  transition:0.4s; }
+.ft-sns li a { color:#603cc2;  transition:0.4s; }
 
 footer > p { 
     width:100%; margin:10px auto 15px; color:#d1d1d1; 
@@ -226,6 +226,6 @@ footer > p {
     /*===== footer hover =====*/
     .ft-content ul li:hover  a{  color:#d4d4d4;  }
     .ft-content:nth-child(3) a:hover { opacity:1; }
-    .ft-sns a:hover { color:#a537ff; transform:scale(1.2);  }
+    .ft-sns a:hover { color:#7a55e0; transform:scale(1.2);  }
 
 }
