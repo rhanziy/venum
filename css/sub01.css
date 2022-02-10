@@ -137,62 +137,6 @@ section {
 .swiper-wrapper .swiper-slide:nth-child(3) .content a::after {  background:rgb(219, 121, 30);}
 
 
-/* ===== circle text ani ==== */
-/* .circleText {  
-    position:absolute; 
-    right:300px; bottom:750px;
-    transform-origin: 100px 500px;
-    transform:rotate(-360deg);
-    animation: spin 60s linear infinite;
-}
-
-.text span {
-    position: absolute;
-    left:100px;
-    display: inline-block;
-    font-family: 'Zen Tokyo Zoo', cursive;
-    font-size:60px; 
-    text-transform: uppercase; 
-    transform-origin: 0px 500px; 
-    opacity: 0.5;
-}
-@keyframes spin {
-    from { transform: rotate(0deg); }
-} */
-
-/*===== footer =====*/
-footer {
-    position:absolute; 
-    width:100%;
-    margin-top:200px;
-}
-.ft-wrap { 
-    display:flex; justify-content: space-between;
-    width:100%; height:250px; margin:0 auto;  
-    padding:40px 100px;
-    background:rgba(0, 0, 0, 0.4); 
-}
-.ft-content {
-    width:27%;
-    padding:0 20px; 
-    color:#989898;
-    font-size:12px;
-    text-align: center;
-}
-.ft-content ul li { width:50%; height:20px; margin:5px auto; }
-.ft-content ul li  a{ color:#989898; }
-.ft-content:nth-child(3) a  { width:140px; margin:30px auto; opacity: 0.6; }  
-.ft-content:nth-child(3) a img { width:100%; }
-.ft-content h4 { font-size:20px; margin-bottom:15px; }
-.ft-sns li { font-size:25px; margin:5px; }
-.ft-sns li:first-child { margin-top:0; }
-.ft-sns li a { color:#603cc2;  transition:0.4s; }
-
-footer > p { 
-    width:100%; margin:10px auto 15px; color:#d1d1d1; 
-    font-size:12px; text-align: center;
-}
-
 @media screen and (min-width:768px) {
     
     /*===== slider hover =====*/
@@ -222,10 +166,5 @@ footer > p {
         transform: rotate(20deg) scale(0.9);
     }
     .swiper-wrapper.wrap .swiper-slide.cw:hover .imgBox h2 { transform:translateY(-15px);}
-
-    /*===== footer hover =====*/
-    .ft-content ul li:hover  a{  color:#d4d4d4;  }
-    .ft-content:nth-child(3) a:hover { opacity:1; }
-    .ft-sns a:hover { color:#7a55e0; transform:scale(1.2);  }
 
 }

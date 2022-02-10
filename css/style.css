@@ -92,15 +92,23 @@ article {
     opacity:0.2; overflow: hidden;
     transition: all 0.4s ease-in; 
 }
-article a  img { width:100%;  object-fit: cover; }
 article:nth-child(1) { bottom:360px; transition-delay:0.2s; }
 article:nth-child(2) { bottom:200px; transition-delay:0.3s;  }
 article:nth-child(3) { bottom:40px; transition-delay:0.4s;  }
 article h3 { margin-left:20px; font-size:16px; color:#a584f3; transform: skew(30deg);}
-article img { transition:all 0.2s ease-in;}
+article a img { width:100%;  object-fit: cover; transition:all 0.2s ease-in;}
+article a span { 
+    position:absolute; left:50%; top:75px; 
+    color:#f0f0f0;  
+    text-transform: uppercase; letter-spacing:1px;
+    transform: translateX(-50%) skew(30deg); 
+    opacity:0; transition: 0.4s;
+}
+article:nth-child(3) a span { top:65px; }
 
-article:hover img { opacity: 0.4;}
 .conBox:hover article{ left:20px; opacity:0.9; }
+article:hover img { opacity: 0.4;}
+article:hover a span { opacity: 0.8; }
 
 /*===== conAni =====*/
 .conAni { 
