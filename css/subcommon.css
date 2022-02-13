@@ -202,6 +202,6 @@ footer > p {
     .ft-content ul li { width:110px; }
     .ft-content:nth-child(3) { display: none; }  
     .ft-content h4 { margin:10px; }
-    .ft-sns { right:50%; transform:translateX(50%); bca}
+    .ft-sns { right:50%; transform:translateX(50%); }
     .ft-sns li { float:left; margin:0 15px; }
 }

@@ -15,18 +15,28 @@
     left:60px; top:50%;
     transform: translateY(-50%);
 }
-.title h2 {
+.title-wrap {
+    height:60px; overflow: hidden; 
+}
+.title-wrap h2 {
     width:500px; margin-bottom: 10px;
     font-family: 'Zen Tokyo Zoo', cursive;
     font-size:50px; color:#fff;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); 
+    transform: translateY(200px);
+    animation: h2Up linear 1.2s forwards;
 }
-.title h2 span { 
-    position: absolute; top:15px; right:0;
+.title-wrap:nth-child(2) h2 { animation-delay: 0.2s; }
+.title-wrap h2 span { 
+    position: absolute; top:-46px; right:0;
     font-size:100px; 
 }
+@keyframes h2Up {
+    to { transform: translateY(0); }
+}
 .title p {
-    width:300px; height:40px;
+    width:300px; height:38px;
+    margin-top:5px;
     color:rgb(115, 255, 0); 
     font-family: 'Play', sans-serif;
     font-size:25px; 
@@ -83,7 +93,7 @@ article p {
     transition:all 0.3s ease-in 0.2s;
  }
  
-article:hover { width:30%; }
+article:hover { width:25%; }
 article:hover img { opacity:1; }
 article:hover h2 { opacity: 0; }
 article:hover div { left:15px; }
