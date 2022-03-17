@@ -1,6 +1,6 @@
-$(document).ready(function(){
-  
-    var swiper = new Swiper(".swiper-container", {
+document.addEventListener("DOMContentLoaded", function(e) {
+
+    const swiper = new Swiper(".swiper-container", {
         effect: "coverflow",
         centeredSlides: true,
         slidesPerView: "auto",
@@ -23,34 +23,15 @@ $(document).ready(function(){
 
     });
 
-    // const text = document.querySelector('.text');
-    // text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
- 
-    // const element = document.querySelectorAll('.text > span');
-    // for ( let i = 0; i < element.length; i++ ){
-    //    element[i].style.transform = "rotate("+i*13.15+"deg)"
-    // }
+    const scarP = document.querySelector('.scar.p');
+    const scarG = document.querySelector('.scar.g');
 
-    $('#btn-open').click(function(e){
-        e.preventDefault( );
-        $(this).toggleClass('x');
-        $('header').toggleClass('open');
-    });
+    window.addEventListener('scroll', function(){
+        let scroll = window.pageYOffset;
 
-    
-    $(window).scroll(function(){
-
-        let scroll = window.pageYOffset ;
-
-        $('.scar.p').css({
-            left : -250+scroll*0.1+"px",
-            top: -150+scroll*0.15+"px"
-        });
-        $('.scar.g').css({
-            bottom:-500+scroll*0.1+"px"
-        });
-
-
+        scarP.style.left = -250+scroll*0.1+"px";
+        scarP.style.top = -150+scroll*0.15+"px";
+        scarG.style.bottom = -500+scroll*0.1+"px";
     });
 
 });
